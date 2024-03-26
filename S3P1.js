@@ -29,7 +29,7 @@ console.log(boundary)
  Scrivi una funzione chiamata "reverseString", che accetta una stringa come parametro e la ritorna invertita (es.: EPICODE => EDOCIPE).
 */
 
-function reverseString (str) {
+function reverseString (stringa) {
   return str.split("").reverse("").join("")
 }
 console.log(reverseString)
@@ -38,7 +38,7 @@ console.log(reverseString)
  Scrivi una funzione chiamata "upperFirst", che accetta una stringa come parametro e la ritorna rendendo maiuscola ogni lettera iniziale di ogni parola.
 */
 
-function upperFirst (str) {
+function upperFirst (stringa) {
   return str.charAt(0).toUpperCase(0) 
 }
 
@@ -89,11 +89,11 @@ function crazyDiff (num) {
  La funzione deve aggiungere la parola "code" all'inizio della stringa fornita e ritornare il risultato, ma se la stringa fornita comincia proprio con "code" allora deve ritornarla senza modifiche.
 */
 
-function codify (str) {
+function codify (stringa) {
     if (str.startsWith('code')) {
       return str
     } else {
-      return 'code ' + str
+      return 'code ' + stringa
     }
   }
   console.log(codify)
@@ -119,7 +119,7 @@ function check3and7 (n) {
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
-function cutString (str) {
-    return str.slice(1, str.length - 1) 
+function cutString (stringa) {
+    return stringa.slice(1, stringa.length - 1) 
   }
   console.log(cutString)
