@@ -47,12 +47,13 @@ console.log(upperFirst)
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
 
-function giveMeRandomù (n) {
-    const arr = []
+function giveMeRandom (n) {
+    const array = []
     for (let i = 0; i <= n; i++) {
-      arr.push(Math.floor(Math.random() * 10))
+      const random = (Math.floor(Math.random() * 10))
+      array.push(random)
     }
-    return arr
+    return array
   }
   console.log(giveMeRandom)
   
